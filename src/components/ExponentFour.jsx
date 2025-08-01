@@ -1,8 +1,12 @@
-const ExponentFour = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n⁴</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 = <span className="total">16</span></p>
-  </div>
-);
+import Exponents from "./Exponents";
+function ExponentFour({ count }) {
+  let exponent = 4;
+
+  return (
+    <div>
+      <Exponents num={count} exponent={exponent} />
+    </div>
+  );
+}
 
 export default ExponentFour;
